@@ -1,0 +1,12 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../../../Magento/Backend/etc/menu.xsd">
+    <menu>
+        <add id="OlapicIntegration_AdminSample::customMenu" title="Custom Menu" module="OlapicIntegration_AdminSample" sortOrder="500" parent="Magento_Backend::system" resource="OlapicIntegration_AdminSample::customMenu"/>
+        <add id="OlapicIntegration_AdminSample::sampleOne" title="Sample One" module="OlapicIntegration_AdminSample" sortOrder="100" parent="OlapicIntegration_AdminSample::customMenu" action="AdminSample/sampleOne" resource="OlapicIntegration_AdminSample::sampleOne"/>
+        <add id="OlapicIntegration_AdminSample::sampleTwo" title="Sample Two" module="OlapicIntegration_AdminSample" sortOrder="200" parent="OlapicIntegration_AdminSample::customMenu" action="AdminSample/sampleTwo" resource="OlapicIntegration_AdminSample::sampleTwo"/>
+    </menu>
+    <menu>
+    <add id="OlapicIntegration_AdminSample::first_level_demo" title="My Menu" module="OlapicIntegration_AdminSample" sortOrder="20" resource="Magento_Backend::content" /> 
+    <add id="OlapicIntegration_AdminSample::second_level_demo" title="Sub Menu" module="OlapicIntegration_AdminSample" sortOrder="1" action="AdminSample/sampleOne" parent="OlapicIntegration_AdminSample::first_level_demo" resource="Magento_Backend::content" />
+    </menu>
+</config>

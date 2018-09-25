@@ -1,0 +1,16 @@
+<?xml version="1.0"?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="../../Store/etc/config.xsd">
+    <default>
+        <widget> <!-- Note that this, is section id from "etc/adminhtml/system.xml" -->
+            <olapic_config>
+                <user_name>Witty Olapic Widget</user_name>
+                <client_id>TEST</client_id>
+                <client_secret>Test Client</client_secret>
+                <api_version>v0.0.1</api_version>
+                <debug>1</debug>
+                <active>1</active>
+                <title>WittyCommerce Olapic Widget</title>
+            </olapic_config>
+        </widget>
+    </default>
+</config>
